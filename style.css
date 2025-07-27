@@ -19,6 +19,23 @@ img{
     color: white;
     border: none;
 }
+
+/* Animation */
+@keyframes banner-animation{
+    0%{
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
 /* custom style */
 .banner{
     display: flex;
@@ -27,6 +44,8 @@ img{
     color: white;
     border-radius: 15px;
     margin: 50px auto;
+
+    animation: banner-animation 0.7s forwards ease-out;
 }
 .banner-left{
     padding-left: 45px;
@@ -137,7 +156,7 @@ img{
     }
 }
 
-
+/* Mobile Device */
 
 @media screen and (max-width: 768px) {
     .container{
